@@ -1,0 +1,12 @@
+diff --git a/engine/engine.py b/engine/engine.py
+index f78212b..a6d5e01 100644
+--- a/engine/engine.py
++++ b/engine/engine.py
+@@ -224,6 +224,7 @@ class Engine(ibus.EngineBase):
+         self.__set_dict_mode_props(anthy_props)
+         self.__set_dict_config_props(anthy_props)
+         anthy_props.append(ibus.Property(key=u"setup",
++                                         icon=u"preferences-desktop",
+                                          tooltip=UN(_("Configure Anthy"))))
+ 
+         return anthy_props
